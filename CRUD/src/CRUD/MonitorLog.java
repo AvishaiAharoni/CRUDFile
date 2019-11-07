@@ -18,10 +18,15 @@ public class MonitorLog {
 	 * @param name - the path of the file to watch
 	 * @throws IOException
 	 */
-	public MonitorLog(String name) throws IOException {
+	public MonitorLog(String name, boolean startOver) throws IOException {
 		this.dispatcher = new Dispatcher<>();
 		this.srcFile = new File(name);
 		this.srcFile.createNewFile();
+		
+		if (startOver) {
+			byte[] empty = new byte[0];
+			com.google.common.io.Files.write(empty, this.srcFile);	
+		}
 		
 		this.th = new Thread(new Runnable() {
 			

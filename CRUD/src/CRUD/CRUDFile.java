@@ -18,13 +18,19 @@ public class CRUDFile implements CRUD<String, Integer> {
 	/**
 	 * constructor to create the CRUDFile
 	 * @param name - the name of the copy file to create.
+	 * @param startOver - to check whether to start a new file (if already exist)
 	 * @throws IOException 
 	 */
-	public CRUDFile(String name) throws IOException {
+	public CRUDFile(String name, boolean startOver) throws IOException {
 //		System.getProperty("user.dir"),
 		this.copyFile = new File(name);
 		// to create if not exist and open if exist
 		this.copyFile.createNewFile();
+		
+		if (startOver) {
+			byte[] empty = new byte[0];
+			com.google.common.io.Files.write(empty, this.copyFile);	
+		}
 	}
 
 	@Override
@@ -119,6 +125,10 @@ public class CRUDFile implements CRUD<String, Integer> {
 		return null;
 	}
 	
+	/**
+	 * method to start over a new file (if it already exist)
+	 * @throws IOException
+	 */
 	public void startOverFile() throws IOException {
 		byte[] empty = new byte[0];
 		com.google.common.io.Files.write(empty, this.copyFile);

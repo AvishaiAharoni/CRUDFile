@@ -83,9 +83,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log1.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log1.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log1.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log1.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
@@ -130,9 +130,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 		
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log2.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log2.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log2.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log2.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
@@ -175,9 +175,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log3.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log3.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log3.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log3.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
@@ -233,9 +233,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log4.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log4.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log4.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log4.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
@@ -307,9 +307,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log6.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log6.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log6.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log6.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
@@ -340,9 +340,9 @@ class MonitorTest {
 		log.createNewFile();
 		assertTrue(log.exists());
 
-		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log7.txt");
+		crud = new CRUDFile("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/copy_log7.txt", false);
 		assertNotNull(crud);
-		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log7.txt");
+		monitor = new MonitorLog("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor/log7.txt", false);
 		monitor.subscribe(t -> {
 			try {
 				return crud.notifyOnMonitor(t);
