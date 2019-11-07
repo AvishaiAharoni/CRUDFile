@@ -11,6 +11,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -46,6 +48,8 @@ class MonitorTest {
 	}
 
 	private static void deleteDir() throws InterruptedException {
+		// Paths.get(System.getProperty("user.dir")).toString();
+
 		File dir = new File("/home/student/test/full stack/java/eclipse-workspace/CRUD/src/monitor");
 		String[] myFiles = dir.list();
 

@@ -118,4 +118,9 @@ public class CRUDFile implements CRUD<String, Integer> {
 		
 		return null;
 	}
+	
+	public void startOverFile() throws IOException {
+		byte[] empty = new byte[0];
+		com.google.common.io.Files.write(empty, this.copyFile);
+	}
 }

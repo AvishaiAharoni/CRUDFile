@@ -5,6 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>CRUD</name>
   <description>A project for managment CRUD file</description>
+  <dependencies>
+	  <dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>28.1-jre</version>
+	</dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
